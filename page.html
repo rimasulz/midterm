@@ -51,6 +51,51 @@
                     </select>
                 </div>
             </fieldset>
+
+            <fieldset style="margin-top: 20px;">
+                <legend>Section 2: Your Profile</legend>
+
+                <div class="form-group">
+                    <label for="bio">Bio:</label>
+                    <textarea id="bio" name="bio" rows="4" cols="40" maxlength="1500" placeholder="Tell me about yourself (Max 250 words)..." required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="hobby">Hobby:</label>
+                    <select id="hobby" name="hobby" required>
+                        <option value="reading">Reading</option>
+                        <option value="coding">Coding</option>
+                        <option value="painting">Painting</option>
+                        <option value="cooking">Cooking</option>
+                        <option value="exercise">Exercising</option>
+                        <option value="Crocheting">Crocheting</option>
+                        <option value="hiking">Hiking</option>
+                        <option value="photography">Photography</option>
+                        <option value="videography">Videography</option>
+                        <option value="music">Music</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Interests (Select one or more):</label>
+                    <div style="display: flex; flex-direction: column; gap: 5px; margin-top: 5px;">
+                        <label><input type="checkbox" name="interests" value="art"> Art</label>
+                        <label><input type="checkbox" name="interests" value="science"> Science</label>
+                        <label><input type="checkbox" name="interests" value="music"> Music</label>
+                        <label><input type="checkbox" name="interests" value="sports"> Sports</label>
+                        <label><input type="checkbox" name="interests" value="market"> Marketing</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="travel">Willing to travel:</label>
+                    <select id="travel" name="travel" required>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+
+            </fieldset>
         </form>
     </main>
 </body>
